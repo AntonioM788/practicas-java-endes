@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		<form action="MayorServlet" method="get">
+		<label for="numero1">Numero1: </label> 
+		<input type="text" name="numero1">
+		<label for="numero2">Numero 2: </label> 
+		<input type="text" name="numero2">
+		<label for="numero3">Numero 3: </label> 
+		<input type="text" name="numero3">
+		
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
