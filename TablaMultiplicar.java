@@ -26,13 +26,13 @@ public class TablaMultiplicar extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String numero1 = request.getParameter("numero1");
+		String numero1 = request.getParameter("TablaMultiplicar");
 		int tabla = 0;
 		
 		 
 		 PrintWriter out = response.getWriter(); //esto es para que me lo saque por pantalla
 		 
-			 Integer n1 = Integer.parseInt(numero1);//puedo escribir una variable nueva
+		Integer n1 = Integer.parseInt(numero1);//puedo escribir una variable nueva
 
 
 		/* }catch(Exception error) {//Esto es para parsear de un String a un entero
@@ -42,7 +42,7 @@ public class TablaMultiplicar extends HttpServlet {
 		 for (int i = 1; i <=10; i++) {
 			 
 			 tabla = i*n1;
-			 out.print("La tabla de multiplicar es: "+tabla);
+			 out.println("La tabla de multiplicar es: "+ i +" x "+ n1 + " = "+ tabla);
 			
 		}
 		
