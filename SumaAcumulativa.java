@@ -48,7 +48,6 @@ public class sumaAcumulativaServlet extends HttpServlet {
 		 
 		 System.out.println("Hola, introduce "+numero1);
 		 
-		 PrintWriter out = response.getWriter();
 		out.print("<h1>La suma de los números es"+ sumaNumeros+"</h1>");
 		
 		
